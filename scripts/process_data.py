@@ -230,7 +230,7 @@ def visualize_cov_distribution(output_dir: str, cov_data: Dict[str, Dict[str, Li
                                         pd.DataFrame(data))
 
 
-def parse_mutation_distance_data(path: str, saved_only: List[bool], algorithms: List[str], distance_prefix: str) -> Dict[str, pd.DataFrame]:
+def parse_mutation_distance_data(path: str, saved_only: List[bool], algorithms: List[str]) -> Dict[str, pd.DataFrame]:
     for dataset in DATASET:
         dfs = []
         for algorithm in algorithms:
@@ -243,16 +243,20 @@ def parse_mutation_distance_data(path: str, saved_only: List[bool], algorithms: 
                         # data_frame = data_frame[data_frame["distance"] != 0]
                         if if_saved:
                             data_frame = data_frame[data_frame["saved"]]
-                        data_frame["max_length"] = np.maximum.reduce(data_frame[[f"{distance_prefix}current_len", f"{distance_prefix}parent_len"]].values, axis=1)
-                        data_frame["mutation"] = data_frame[f"{distance_prefix}distance"] / data_frame["max_length"]
+                        data_frame["max_length_bytes"] = np.maximum.reduce(data_frame[[f"byte_current_len", f"byte_parent_len"]].values, axis=1)
+                        data_frame["max_length_string"] = np.maximum.reduce(data_frame[[f"current_len", f"parent_len"]].values, axis=1)
+                        data_frame["mutation_bytes"] = data_frame[f"byte_distance"] / data_frame["max_length_bytes"]
+                        data_frame["mutation_string"] = data_frame[f"distance"] / data_frame["max_length_string"]
                         data_frame.drop(columns=["current_len", "parent_len", "saved", "parent", "id"])
-                        data_frame.dropna(subset = ['mutation'], inplace=True)
+                        data_frame.dropna(subset = ['mutation_bytes'], inplace=True)
+                        data_frame.dropna(subset = ['mutation_string'], inplace=True)
                         if not if_saved and len(data_frame) > 100000:
                             data_frame = data_frame.sample(n=100000, random_state=0)
                         dfs.append(data_frame)
         if dfs:
             dfs = pd.concat(dfs)
-            dfs.dropna(subset = ['mutation'], inplace=True)
+            dfs.dropna(subset = ['mutation_bytes'], inplace=True)
+            dfs.dropna(subset = ['mutation_string'], inplace=True)
             yield dataset, dfs
 
 def parse_and_visualize_mutation_data(path: str, saved_only: List[bool], generators: List[str], algorithms: List[str]):
@@ -264,11 +268,11 @@ def parse_and_visualize_mutation_data(path: str, saved_only: List[bool], generat
         plt.show()
     # sns.histplot(data_frame,  x="distance")
 
-def process_mutation_data(path: str, saved_only: List[bool], algorithms: List[str], df_name: str, distance_prefix: str):
+def process_mutation_data(path: str, saved_only: List[bool], algorithms: List[str], df_name: str):
     df_dict = {}
-    attributes = ['mutation', 'algorithm']
+    attributes = ['mutation_bytes', 'mutation_string', 'algorithm']
 
-    for name, df in parse_mutation_distance_data(path, saved_only, algorithms, distance_prefix):
+    for name, df in parse_mutation_distance_data(path, saved_only, algorithms):
         print('processing {}...'.format(name))
         for attribute in attributes:
             if attribute in df_dict:
