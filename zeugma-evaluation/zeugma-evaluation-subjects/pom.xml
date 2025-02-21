@@ -22,7 +22,7 @@
         <repository>
             <id>chocopy-artifacts</id>
             <name>chocopy/chocopy artifacts</name>
-            <url>https://raw.githubusercontent.com/chocopy/artifacts/main</url>
+            <url>https://raw.githubusercontent.com/aoli-al/artifacts/main</url>
         </repository>
     </repositories>
     <dependencies>
