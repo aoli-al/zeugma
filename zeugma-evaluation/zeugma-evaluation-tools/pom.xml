@@ -529,7 +529,7 @@
                 <subject>chocopy</subject>
                 <gen.type>py.Python</gen.type>
                 <meringue.testClass>edu.neu.ccs.prl.zeugma.eval.FuzzChocopy</meringue.testClass>
-                <meringue.includedArtifacts>ignored</meringue.includedArtifacts>
+                <meringue.includedArtifacts>org.chocopy:*</meringue.includedArtifacts>
             </properties>
         </profile>
         <profile>
@@ -547,7 +547,7 @@
                 <subject>gson</subject>
                 <gen.type>json.JSON</gen.type>
                 <meringue.testClass>edu.neu.ccs.prl.zeugma.eval.FuzzGson</meringue.testClass>
-                <meringue.includedArtifacts>ignored</meringue.includedArtifacts>
+                <meringue.includedArtifacts>com.google.code.gson:*</meringue.includedArtifacts>
             </properties>
         </profile>
         <profile>
@@ -556,7 +556,7 @@
                 <subject>jackson</subject>
                 <gen.type>json.JSON</gen.type>
                 <meringue.testClass>edu.neu.ccs.prl.zeugma.eval.FuzzJackson</meringue.testClass>
-                <meringue.includedArtifacts>ignored</meringue.includedArtifacts>
+                <meringue.includedArtifacts>com.fasterxml.jackson.core:*</meringue.includedArtifacts>
             </properties>
         </profile>
         <profile>
