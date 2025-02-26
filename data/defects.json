@@ -1,0 +1,67 @@
+[
+  {
+    "subject": "Bcel",
+    "identifier": "B0",
+    "issue": "https://issues.apache.org/jira/browse/BCEL-367"
+  },
+  {
+    "subject": "Bcel",
+    "identifier": "B1",
+    "issue": "https://issues.apache.org/jira/browse/BCEL-368"
+  },
+  {
+    "subject": "Bcel",
+    "identifier": "B2",
+    "issue": "https://issues.apache.org/jira/browse/BCEL-369"
+  },
+  {
+    "subject": "Closure",
+    "identifier": "C0",
+    "issue": "https://github.com/google/closure-compiler/issues/3593",
+  },
+  {
+    "subject": "Closure",
+    "identifier": "C1",
+    "issue": "https://github.com/google/closure-compiler/issues/4096"
+  },
+  {
+    "subject": "Nashorn",
+    "identifier": "N0",
+    "issue":  "https://bugs.java.com/bugdatabase/view_bug?bug_id=JDK-8309915",
+  },
+  {
+    "subject": "Nashorn",
+    "identifier": "N1",
+    "issue":  "https://bugs.java.com/bugdatabase/view_bug?bug_id=JDK-8309911",
+  },
+  {
+    "subject": "Nashorn",
+    "identifier": "N2",
+    "issue":  "https://bugs.java.com/bugdatabase/view_bug?bug_id=JDK-8309914",
+  },
+  {
+    "subject": "Rhino",
+    "identifier": "R0",
+    "issue":  "https://github.com/mozilla/rhino/issues/409"
+  },
+  {
+    "subject": "Rhino",
+    "identifier": "R1",
+    "issue":  "https://github.com/mozilla/rhino/issues/406"
+  },
+  {
+    "subject": "Rhino",
+    "identifier": "R2",
+    "issue":  "https://github.com/mozilla/rhino/issues/397"
+  },
+  {
+    "subject": "Rhino",
+    "identifier": "R3",
+    "issue":  "https://github.com/mozilla/rhino/issues/405"
+  },
+  {
+    "subject": "Rhino",
+    "identifier": "R4",
+    "issue":  "https://github.com/mozilla/rhino/issues/1337"
+  }
+]

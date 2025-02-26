@@ -1,0 +1,2964 @@
+[
+  {
+    "subject": "Bcel",
+    "trace": [
+      {
+        "declaringClass": "org.apache.bcel.util.ClassPath",
+        "fileName": "ClassPath.java",
+        "lineNumber": 656,
+        "methodName": "getClassFile"
+      },
+      {
+        "declaringClass": "org.apache.bcel.util.ClassPath",
+        "fileName": "ClassPath.java",
+        "lineNumber": 705,
+        "methodName": "getInputStream"
+      },
+      {
+        "declaringClass": "org.apache.bcel.util.ClassPath",
+        "fileName": "ClassPath.java",
+        "lineNumber": 679,
+        "methodName": "getInputStream"
+      },
+      {
+        "declaringClass": "org.apache.bcel.util.AbstractClassPathRepository",
+        "fileName": "AbstractClassPathRepository.java",
+        "lineNumber": 117,
+        "methodName": "loadClass"
+      },
+      {
+        "declaringClass": "org.apache.bcel.util.MemorySensitiveClassPathRepository",
+        "fileName": "MemorySensitiveClassPathRepository.java",
+        "lineNumber": 33,
+        "methodName": "loadClass"
+      }
+    ],
+    "type": "java.io.IOException",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. Exception only occurs if the name of the class matches a different, valid class on the classpath (e.g., java.lang.String)."
+  },
+  {
+    "subject": "Bcel",
+    "trace": [
+      {
+        "declaringClass": "jdk.internal.util.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 64,
+        "methodName": "outOfBounds"
+      },
+      {
+        "declaringClass": "jdk.internal.util.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 70,
+        "methodName": "outOfBoundsCheckIndex"
+      },
+      {
+        "declaringClass": "jdk.internal.util.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 248,
+        "methodName": "checkIndex"
+      },
+      {
+        "declaringClass": "java.util.Objects",
+        "fileName": "Objects.java",
+        "lineNumber": 372,
+        "methodName": "checkIndex"
+      },
+      {
+        "declaringClass": "java.util.ArrayList",
+        "fileName": "ArrayList.java",
+        "lineNumber": 459,
+        "methodName": "get"
+      }
+    ],
+    "type": "java.lang.IndexOutOfBoundsException",
+    "associatedDefects": [
+      "B0"
+    ]
+  },
+  {
+    "subject": "Bcel",
+    "trace": [],
+    "type": "java.lang.OutOfMemoryError",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. BCEL tries to initialize a \"tableswitch\" instruction where the difference between the high and low values for the table is large causing an OutOfMemoryError to occur when BCEL tries to allocate space to store information about the instruction."
+  },
+  {
+    "subject": "Bcel",
+    "trace": [
+      {
+        "declaringClass": "org.apache.bcel.generic.TABLESWITCH",
+        "fileName": "TABLESWITCH.java",
+        "lineNumber": 96,
+        "methodName": "initFromFile"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": 393,
+        "methodName": "readInstruction"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.InstructionList",
+        "fileName": "InstructionList.java",
+        "lineNumber": 125,
+        "methodName": "<init>"
+      },
+      {
+        "declaringClass": "org.apache.bcel.verifier.statics.Pass3aVerifier",
+        "fileName": "Pass3aVerifier.java",
+        "lineNumber": 1088,
+        "methodName": "do_verify"
+      },
+      {
+        "declaringClass": "org.apache.bcel.verifier.PassVerifier",
+        "fileName": "PassVerifier.java",
+        "lineNumber": 98,
+        "methodName": "verify"
+      }
+    ],
+    "type": "java.lang.OutOfMemoryError",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. BCEL tries to initialize a \"tableswitch\" instruction where the difference between the high and low values for the table is large causing an OutOfMemoryError to occur when BCEL tries to allocate space to store information about the instruction."
+  },
+  {
+    "subject": "Bcel",
+    "trace": [
+      {
+        "declaringClass": "org.apache.bcel.generic.TABLESWITCH",
+        "fileName": "TABLESWITCH.java",
+        "lineNumber": 97,
+        "methodName": "initFromFile"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": 393,
+        "methodName": "readInstruction"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.InstructionList",
+        "fileName": "InstructionList.java",
+        "lineNumber": 125,
+        "methodName": "<init>"
+      },
+      {
+        "declaringClass": "org.apache.bcel.verifier.statics.Pass3aVerifier",
+        "fileName": "Pass3aVerifier.java",
+        "lineNumber": 1088,
+        "methodName": "do_verify"
+      },
+      {
+        "declaringClass": "org.apache.bcel.verifier.PassVerifier",
+        "fileName": "PassVerifier.java",
+        "lineNumber": 98,
+        "methodName": "verify"
+      }
+    ],
+    "type": "java.lang.OutOfMemoryError",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. BCEL tries to initialize a \"tableswitch\" instruction where the difference between the high and low values for the table is large causing an OutOfMemoryError to occur when BCEL tries to allocate space to store information about the instruction."
+  },
+  {
+    "subject": "Bcel",
+    "trace": [
+      {
+        "declaringClass": "org.apache.bcel.generic.TABLESWITCH",
+        "fileName": "TABLESWITCH.java",
+        "lineNumber": 98,
+        "methodName": "initFromFile"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": 393,
+        "methodName": "readInstruction"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.InstructionList",
+        "fileName": "InstructionList.java",
+        "lineNumber": 125,
+        "methodName": "<init>"
+      },
+      {
+        "declaringClass": "org.apache.bcel.verifier.statics.Pass3aVerifier",
+        "fileName": "Pass3aVerifier.java",
+        "lineNumber": 1088,
+        "methodName": "do_verify"
+      },
+      {
+        "declaringClass": "org.apache.bcel.verifier.PassVerifier",
+        "fileName": "PassVerifier.java",
+        "lineNumber": 98,
+        "methodName": "verify"
+      }
+    ],
+    "type": "java.lang.OutOfMemoryError",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. BCEL tries to initialize a \"tableswitch\" instruction where the difference between the high and low values for the table is large causing an OutOfMemoryError to occur when BCEL tries to allocate space to store information about the instruction."
+  },
+  {
+    "subject": "Bcel",
+    "trace": [
+      {
+        "declaringClass": "java.lang.AbstractStringBuilder",
+        "fileName": "AbstractStringBuilder.java",
+        "lineNumber": 774,
+        "methodName": "append"
+      },
+      {
+        "declaringClass": "java.lang.StringBuilder",
+        "fileName": "StringBuilder.java",
+        "lineNumber": 252,
+        "methodName": "append"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": 585,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.BranchInstruction",
+        "fileName": "BranchInstruction.java",
+        "lineNumber": 206,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Select",
+        "fileName": "Select.java",
+        "lineNumber": 308,
+        "methodName": "toString"
+      }
+    ],
+    "type": "java.lang.StackOverflowError",
+    "associatedDefects": [
+      "B1"
+    ]
+  },
+  {
+    "subject": "Bcel",
+    "trace": [
+      {
+        "declaringClass": "java.lang.AbstractStringBuilder",
+        "fileName": "AbstractStringBuilder.java",
+        "lineNumber": 775,
+        "methodName": "append"
+      },
+      {
+        "declaringClass": "java.lang.StringBuilder",
+        "fileName": "StringBuilder.java",
+        "lineNumber": 252,
+        "methodName": "append"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": 585,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.BranchInstruction",
+        "fileName": "BranchInstruction.java",
+        "lineNumber": 206,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Select",
+        "fileName": "Select.java",
+        "lineNumber": 308,
+        "methodName": "toString"
+      }
+    ],
+    "type": "java.lang.StackOverflowError",
+    "associatedDefects": [
+      "B1"
+    ]
+  },
+  {
+    "subject": "Bcel",
+    "trace": [
+      {
+        "declaringClass": "java.lang.StringBuilder",
+        "fileName": "StringBuilder.java",
+        "lineNumber": 252,
+        "methodName": "append"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": 585,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.BranchInstruction",
+        "fileName": "BranchInstruction.java",
+        "lineNumber": 206,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Select",
+        "fileName": "Select.java",
+        "lineNumber": 308,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": 572,
+        "methodName": "toString"
+      }
+    ],
+    "type": "java.lang.StackOverflowError",
+    "associatedDefects": [
+      "B1"
+    ]
+  },
+  {
+    "subject": "Bcel",
+    "trace": [
+      {
+        "declaringClass": "org.apache.bcel.generic.BranchInstruction",
+        "fileName": "BranchInstruction.java",
+        "lineNumber": -1,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Select",
+        "fileName": "Select.java",
+        "lineNumber": 308,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": 572,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Select",
+        "fileName": "Select.java",
+        "lineNumber": 313,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": 572,
+        "methodName": "toString"
+      }
+    ],
+    "type": "java.lang.StackOverflowError",
+    "associatedDefects": [
+      "B1"
+    ]
+  },
+  {
+    "subject": "Bcel",
+    "trace": [
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": -1,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.BranchInstruction",
+        "fileName": "BranchInstruction.java",
+        "lineNumber": 206,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Select",
+        "fileName": "Select.java",
+        "lineNumber": 308,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": 572,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Select",
+        "fileName": "Select.java",
+        "lineNumber": 313,
+        "methodName": "toString"
+      }
+    ],
+    "type": "java.lang.StackOverflowError",
+    "associatedDefects": [
+      "B1"
+    ]
+  },
+  {
+    "subject": "Bcel",
+    "trace": [
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": 585,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.BranchInstruction",
+        "fileName": "BranchInstruction.java",
+        "lineNumber": 206,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Select",
+        "fileName": "Select.java",
+        "lineNumber": 308,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": 572,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Select",
+        "fileName": "Select.java",
+        "lineNumber": 313,
+        "methodName": "toString"
+      }
+    ],
+    "type": "java.lang.StackOverflowError",
+    "associatedDefects": [
+      "B1"
+    ]
+  },
+  {
+    "subject": "Bcel",
+    "trace": [
+      {
+        "declaringClass": "java.lang.StringBuilder",
+        "fileName": "StringBuilder.java",
+        "lineNumber": 252,
+        "methodName": "append"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": 585,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.LocalVariableInstruction",
+        "fileName": "LocalVariableInstruction.java",
+        "lineNumber": 207,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Instruction",
+        "fileName": "Instruction.java",
+        "lineNumber": 572,
+        "methodName": "toString"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.Select",
+        "fileName": "Select.java",
+        "lineNumber": 313,
+        "methodName": "toString"
+      }
+    ],
+    "type": "java.lang.StackOverflowError",
+    "associatedDefects": [
+      "B1"
+    ]
+  },
+  {
+    "subject": "Bcel",
+    "trace": [
+      {
+        "declaringClass": "org.apache.bcel.verifier.statics.Pass3aVerifier$InstOperandConstraintVisitor",
+        "fileName": "Pass3aVerifier.java",
+        "lineNumber": 426,
+        "methodName": "visitGETSTATIC"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.GETSTATIC",
+        "fileName": "GETSTATIC.java",
+        "lineNumber": 63,
+        "methodName": "accept"
+      },
+      {
+        "declaringClass": "org.apache.bcel.generic.InstructionHandle",
+        "fileName": "InstructionHandle.java",
+        "lineNumber": 84,
+        "methodName": "accept"
+      },
+      {
+        "declaringClass": "org.apache.bcel.verifier.statics.Pass3aVerifier",
+        "fileName": "Pass3aVerifier.java",
+        "lineNumber": 1232,
+        "methodName": "pass3StaticInstructionOperandsChecks"
+      },
+      {
+        "declaringClass": "org.apache.bcel.verifier.statics.Pass3aVerifier",
+        "fileName": "Pass3aVerifier.java",
+        "lineNumber": 1106,
+        "methodName": "do_verify"
+      }
+    ],
+    "type": "org.apache.bcel.verifier.exc.AssertionViolatedException",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. Exception only occurs if the name of the class matches a different, valid class on the classpath (e.g., java.lang.String)."
+  },
+  {
+    "subject": "Bcel",
+    "trace": [
+      {
+        "declaringClass": "org.apache.bcel.verifier.structurals.ControlFlowGraph$InstructionContextImpl",
+        "fileName": "ControlFlowGraph.java",
+        "lineNumber": 285,
+        "methodName": "getOutFrame"
+      },
+      {
+        "declaringClass": "org.apache.bcel.verifier.structurals.Pass3bVerifier",
+        "fileName": "Pass3bVerifier.java",
+        "lineNumber": 275,
+        "methodName": "circulationPump"
+      },
+      {
+        "declaringClass": "org.apache.bcel.verifier.structurals.Pass3bVerifier",
+        "fileName": "Pass3bVerifier.java",
+        "lineNumber": 386,
+        "methodName": "do_verify"
+      },
+      {
+        "declaringClass": "org.apache.bcel.verifier.PassVerifier",
+        "fileName": "PassVerifier.java",
+        "lineNumber": 98,
+        "methodName": "verify"
+      },
+      {
+        "declaringClass": "org.apache.bcel.verifier.Verifier",
+        "fileName": "Verifier.java",
+        "lineNumber": 166,
+        "methodName": "doPass3b"
+      }
+    ],
+    "type": "org.apache.bcel.verifier.exc.AssertionViolatedException",
+    "associatedDefects": [
+      "B2"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.VarCheck",
+        "fileName": "VarCheck.java",
+        "lineNumber": 289,
+        "methodName": "handleUndeclaredVariableRef"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.VarCheck",
+        "fileName": "VarCheck.java",
+        "lineNumber": 211,
+        "methodName": "checkName"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.VarCheck",
+        "fileName": "VarCheck.java",
+        "lineNumber": 171,
+        "methodName": "visit"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.NodeTraversal",
+        "fileName": "NodeTraversal.java",
+        "lineNumber": 963,
+        "methodName": "traverseBranch"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.NodeTraversal",
+        "fileName": "NodeTraversal.java",
+        "lineNumber": 953,
+        "methodName": "traverseBranch"
+      }
+    ],
+    "type": "java.lang.IllegalStateException",
+    "associatedDefects": [
+      "C0"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 502,
+        "methodName": "checkState"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.InlineVariables$InliningBehavior",
+        "fileName": "InlineVariables.java",
+        "lineNumber": 816,
+        "methodName": "removeDeclaration"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.InlineVariables$InliningBehavior",
+        "fileName": "InlineVariables.java",
+        "lineNumber": 796,
+        "methodName": "inlineWellDefinedVariable"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.InlineVariables$InliningBehavior$StandardVarExpert",
+        "fileName": "InlineVariables.java",
+        "lineNumber": 546,
+        "methodName": "lambda$createInlineWellDefinedVarAnalysis$2"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.InlineVariables$InliningBehavior$PositiveInlineVarAnalysis",
+        "fileName": "InlineVariables.java",
+        "lineNumber": 630,
+        "methodName": "performInline"
+      }
+    ],
+    "type": "java.lang.IllegalStateException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 590,
+        "methodName": "checkState"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.LightweightMessageFormatter",
+        "fileName": "LightweightMessageFormatter.java",
+        "lineNumber": 237,
+        "methodName": "padMultipleLines"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.LightweightMessageFormatter",
+        "fileName": "LightweightMessageFormatter.java",
+        "lineNumber": 169,
+        "methodName": "getExcerptWithPosition"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.LightweightMessageFormatter",
+        "fileName": "LightweightMessageFormatter.java",
+        "lineNumber": 138,
+        "methodName": "format"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.LightweightMessageFormatter",
+        "fileName": "LightweightMessageFormatter.java",
+        "lineNumber": 84,
+        "methodName": "formatError"
+      }
+    ],
+    "type": "java.lang.IllegalStateException",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. Requires input with non-printing characters."
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 590,
+        "methodName": "checkState"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.LightweightMessageFormatter",
+        "fileName": "LightweightMessageFormatter.java",
+        "lineNumber": 237,
+        "methodName": "padMultipleLines"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.LightweightMessageFormatter",
+        "fileName": "LightweightMessageFormatter.java",
+        "lineNumber": 169,
+        "methodName": "getExcerptWithPosition"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.LightweightMessageFormatter",
+        "fileName": "LightweightMessageFormatter.java",
+        "lineNumber": 138,
+        "methodName": "format"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.LightweightMessageFormatter",
+        "fileName": "LightweightMessageFormatter.java",
+        "lineNumber": 89,
+        "methodName": "formatWarning"
+      }
+    ],
+    "type": "java.lang.IllegalStateException",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. Requires input with non-printing characters."
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 590,
+        "methodName": "checkState"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.LightweightMessageFormatter",
+        "fileName": "LightweightMessageFormatter.java",
+        "lineNumber": 264,
+        "methodName": "padMultipleLines"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.LightweightMessageFormatter",
+        "fileName": "LightweightMessageFormatter.java",
+        "lineNumber": 169,
+        "methodName": "getExcerptWithPosition"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.LightweightMessageFormatter",
+        "fileName": "LightweightMessageFormatter.java",
+        "lineNumber": 138,
+        "methodName": "format"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.LightweightMessageFormatter",
+        "fileName": "LightweightMessageFormatter.java",
+        "lineNumber": 89,
+        "methodName": "formatWarning"
+      }
+    ],
+    "type": "java.lang.IllegalStateException",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. Requires input with non-printing characters."
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.InlineObjectLiterals$InliningBehavior",
+        "fileName": "InlineObjectLiterals.java",
+        "lineNumber": 87,
+        "methodName": "afterExitScope"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.ReferenceCollector$CollectorCallback",
+        "fileName": "ReferenceCollector.java",
+        "lineNumber": 244,
+        "methodName": "exitScope"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.NodeTraversal",
+        "fileName": "NodeTraversal.java",
+        "lineNumber": 1183,
+        "methodName": "popScope"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.NodeTraversal",
+        "fileName": "NodeTraversal.java",
+        "lineNumber": 1173,
+        "methodName": "popScope"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.NodeTraversal",
+        "fileName": "NodeTraversal.java",
+        "lineNumber": 958,
+        "methodName": "traverseBranch"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 1052,
+        "methodName": "traverseAssign"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 431,
+        "methodName": "traverseNode"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 1068,
+        "methodName": "traverseAssign"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 431,
+        "methodName": "traverseNode"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 528,
+        "methodName": "traverseNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 1128,
+        "methodName": "traverseAssign"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 549,
+        "methodName": "traverseInstanceof"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 512,
+        "methodName": "traverseNode"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 528,
+        "methodName": "traverseNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 1253,
+        "methodName": "traverseChildren"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 528,
+        "methodName": "traverseNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 685,
+        "methodName": "traverseCompoundAssign"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 528,
+        "methodName": "traverseNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 689,
+        "methodName": "traverseCompoundAssign"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 528,
+        "methodName": "traverseNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 621,
+        "methodName": "traverseIncrementOrDecrementOp"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 528,
+        "methodName": "traverseNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 656,
+        "methodName": "traverseIncrementOrDecrementOp"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 528,
+        "methodName": "traverseNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 547,
+        "methodName": "traverseInstanceof"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 528,
+        "methodName": "traverseNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 881,
+        "methodName": "traverseNonPrototypeObjectLiteral"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 528,
+        "methodName": "traverseNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 583,
+        "methodName": "traverseNormalOrOptChainGetProp"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 528,
+        "methodName": "traverseNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 1140,
+        "methodName": "traverseRemovableAssignValue"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 528,
+        "methodName": "traverseNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 988,
+        "methodName": "traverseVanillaFor"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Closure",
+    "trace": [
+      {
+        "declaringClass": "com.google.javascript.jscomp.jarjar.com.google.common.base.Preconditions",
+        "fileName": "Preconditions.java",
+        "lineNumber": 907,
+        "methodName": "checkNotNull"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 849,
+        "methodName": "getVarForNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 702,
+        "methodName": "traverseNameNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 528,
+        "methodName": "traverseNode"
+      },
+      {
+        "declaringClass": "com.google.javascript.jscomp.RemoveUnusedCode$Continuation",
+        "fileName": "RemoveUnusedCode.java",
+        "lineNumber": 1763,
+        "methodName": "apply"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [
+      "C1"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator$TypeBounds",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 770,
+        "methodName": "<init>"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator$TypeBounds",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 793,
+        "methodName": "maybeNew"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator$TypeBounds",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 778,
+        "methodName": "notNarrowerThan"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 3889,
+        "methodName": "loadAND_OR"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator$2",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 1087,
+        "methodName": "enterAND"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N0"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator$TypeBounds",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 770,
+        "methodName": "<init>"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator$TypeBounds",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 793,
+        "methodName": "maybeNew"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator$TypeBounds",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 778,
+        "methodName": "notNarrowerThan"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 3889,
+        "methodName": "loadAND_OR"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator$2",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 1093,
+        "methodName": "enterOR"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N0"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 985,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 947,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 929,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 345,
+        "methodName": "loadIdent"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator$2",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 868,
+        "methodName": "enterIdentNode"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N1"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 565,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 1289,
+        "methodName": "leaveBlock"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 568,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.BranchOptimizer",
+        "fileName": "BranchOptimizer.java",
+        "lineNumber": 141,
+        "methodName": "optimizeLogicalOperand"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 573,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 3483,
+        "methodName": "enterForOrWhile"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 568,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 3483,
+        "methodName": "enterForOrWhile"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 573,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 1411,
+        "methodName": "enterJumpStatement"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 568,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 3460,
+        "methodName": "enterForOrWhile"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 573,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 3922,
+        "methodName": "loadAND_OR"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 568,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 3178,
+        "methodName": "enterThrowNode"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 568,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 1289,
+        "methodName": "leaveBlock"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 568,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 4336,
+        "methodName": "loadTernaryNode"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 568,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 4341,
+        "methodName": "loadTernaryNode"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 573,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.BranchOptimizer",
+        "fileName": "BranchOptimizer.java",
+        "lineNumber": 141,
+        "methodName": "optimizeLogicalOperand"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 573,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 3460,
+        "methodName": "enterForOrWhile"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 573,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 3178,
+        "methodName": "enterThrowNode"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 573,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 1289,
+        "methodName": "leaveBlock"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 573,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 3912,
+        "methodName": "loadAND_OR"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 573,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 4336,
+        "methodName": "loadTernaryNode"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.ir.Symbol",
+        "fileName": "Symbol.java",
+        "lineNumber": 573,
+        "methodName": "getSlot"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 945,
+        "methodName": "load"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2589,
+        "methodName": "emitLocalVariableConversion"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.MethodEmitter",
+        "fileName": "MethodEmitter.java",
+        "lineNumber": 2546,
+        "methodName": "beforeJoinPoint"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.codegen.CodeGenerator",
+        "fileName": "CodeGenerator.java",
+        "lineNumber": 4341,
+        "methodName": "loadTernaryNode"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [
+      "N2"
+    ]
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.ParserContext",
+        "fileName": "ParserContext.java",
+        "lineNumber": 91,
+        "methodName": "pop"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2051,
+        "methodName": "forStatement"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 1051,
+        "methodName": "statement"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 909,
+        "methodName": "sourceElements"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 844,
+        "methodName": "program"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. Requires input with non-printing characters."
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.ParserContext",
+        "fileName": "ParserContext.java",
+        "lineNumber": 91,
+        "methodName": "pop"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 3836,
+        "methodName": "functionExpression"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 3578,
+        "methodName": "memberExpression"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 3407,
+        "methodName": "leftHandSideExpression"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 4440,
+        "methodName": "unaryExpression"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. Requires input with non-printing characters."
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.ParserContext",
+        "fileName": "ParserContext.java",
+        "lineNumber": 91,
+        "methodName": "pop"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 3836,
+        "methodName": "functionExpression"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 1099,
+        "methodName": "statement"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 909,
+        "methodName": "sourceElements"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 844,
+        "methodName": "program"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. Requires input with non-printing characters."
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.ParserContext",
+        "fileName": "ParserContext.java",
+        "lineNumber": 91,
+        "methodName": "pop"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 596,
+        "methodName": "restoreBlock"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 615,
+        "methodName": "getBlock"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 1436,
+        "methodName": "block"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 1039,
+        "methodName": "statement"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. Requires input with non-printing characters."
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.ParserContext",
+        "fileName": "ParserContext.java",
+        "lineNumber": 91,
+        "methodName": "pop"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 596,
+        "methodName": "restoreBlock"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 615,
+        "methodName": "getBlock"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 637,
+        "methodName": "getStatement"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 632,
+        "methodName": "getStatement"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. Requires input with non-printing characters."
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.ParserContext",
+        "fileName": "ParserContext.java",
+        "lineNumber": 91,
+        "methodName": "pop"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 596,
+        "methodName": "restoreBlock"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2709,
+        "methodName": "tryStatement"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 1078,
+        "methodName": "statement"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 909,
+        "methodName": "sourceElements"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. Requires input with non-printing characters."
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.ParserContext",
+        "fileName": "ParserContext.java",
+        "lineNumber": 91,
+        "methodName": "pop"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2524,
+        "methodName": "switchStatement"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 1072,
+        "methodName": "statement"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 909,
+        "methodName": "sourceElements"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 844,
+        "methodName": "program"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. Requires input with non-printing characters."
+  },
+  {
+    "subject": "Nashorn",
+    "trace": [
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.ParserContext",
+        "fileName": "ParserContext.java",
+        "lineNumber": 91,
+        "methodName": "pop"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2153,
+        "methodName": "whileStatement"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 1054,
+        "methodName": "statement"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 909,
+        "methodName": "sourceElements"
+      },
+      {
+        "declaringClass": "jdk.nashorn.internal.parser.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 844,
+        "methodName": "program"
+      }
+    ],
+    "type": "java.lang.AssertionError",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. Requires input with non-printing characters."
+  },
+  {
+    "subject": "Rhino",
+    "trace": [
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 1991,
+        "methodName": "ungetChar"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 1716,
+        "methodName": "getFirstXMLToken"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2590,
+        "methodName": "xmlInitializer"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2568,
+        "methodName": "unaryExpr"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2494,
+        "methodName": "expExpr"
+      }
+    ],
+    "type": "java.lang.ArrayIndexOutOfBoundsException",
+    "associatedDefects": [
+      "R0"
+    ]
+  },
+  {
+    "subject": "Rhino",
+    "trace": [
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 1991,
+        "methodName": "ungetChar"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 1716,
+        "methodName": "getFirstXMLToken"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2590,
+        "methodName": "xmlInitializer"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2568,
+        "methodName": "unaryExpr"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2529,
+        "methodName": "unaryExpr"
+      }
+    ],
+    "type": "java.lang.ArrayIndexOutOfBoundsException",
+    "associatedDefects": [
+      "R0"
+    ]
+  },
+  {
+    "subject": "Rhino",
+    "trace": [
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 1991,
+        "methodName": "ungetChar"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 1716,
+        "methodName": "getFirstXMLToken"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2590,
+        "methodName": "xmlInitializer"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2568,
+        "methodName": "unaryExpr"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2536,
+        "methodName": "unaryExpr"
+      }
+    ],
+    "type": "java.lang.ArrayIndexOutOfBoundsException",
+    "associatedDefects": [
+      "R0"
+    ]
+  },
+  {
+    "subject": "Rhino",
+    "trace": [
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 1991,
+        "methodName": "ungetChar"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 1716,
+        "methodName": "getFirstXMLToken"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2590,
+        "methodName": "xmlInitializer"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2568,
+        "methodName": "unaryExpr"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 2543,
+        "methodName": "unaryExpr"
+      }
+    ],
+    "type": "java.lang.ArrayIndexOutOfBoundsException",
+    "associatedDefects": [
+      "R0"
+    ]
+  },
+  {
+    "subject": "Rhino",
+    "trace": [
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 3957,
+        "methodName": "destructuringAssignmentHelper"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 3936,
+        "methodName": "createDestructuringAssignment"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 2297,
+        "methodName": "createAssignment"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 448,
+        "methodName": "transformAssignment"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 222,
+        "methodName": "transform"
+      }
+    ],
+    "type": "java.lang.ClassCastException",
+    "associatedDefects": [
+      "R1"
+    ]
+  },
+  {
+    "subject": "Rhino",
+    "trace": [
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 3966,
+        "methodName": "destructuringAssignmentHelper"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 3936,
+        "methodName": "createDestructuringAssignment"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 2297,
+        "methodName": "createAssignment"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 448,
+        "methodName": "transformAssignment"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 222,
+        "methodName": "transform"
+      }
+    ],
+    "type": "java.lang.ClassCastException",
+    "associatedDefects": [
+      "R1"
+    ]
+  },
+  {
+    "subject": "Rhino",
+    "trace": [
+      {
+        "declaringClass": "org.mozilla.javascript.Kit",
+        "fileName": "Kit.java",
+        "lineNumber": 353,
+        "methodName": "codeBug"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 1990,
+        "methodName": "ungetChar"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 2007,
+        "methodName": "peekChar"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 1774,
+        "methodName": "getNextXMLToken"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 1717,
+        "methodName": "getFirstXMLToken"
+      }
+    ],
+    "type": "java.lang.IllegalStateException",
+    "associatedDefects": [
+      "R2"
+    ]
+  },
+  {
+    "subject": "Rhino",
+    "trace": [
+      {
+        "declaringClass": "org.mozilla.javascript.Kit",
+        "fileName": "Kit.java",
+        "lineNumber": 366,
+        "methodName": "codeBug"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 2498,
+        "methodName": "decompile"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 2509,
+        "methodName": "decompileArrayLiteral"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 2469,
+        "methodName": "decompile"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 2509,
+        "methodName": "decompileArrayLiteral"
+      }
+    ],
+    "type": "java.lang.IllegalStateException",
+    "associatedDefects": [
+      "R3"
+    ]
+  },
+  {
+    "subject": "Rhino",
+    "trace": [
+      {
+        "declaringClass": "org.mozilla.javascript.Kit",
+        "fileName": "Kit.java",
+        "lineNumber": 366,
+        "methodName": "codeBug"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 2498,
+        "methodName": "decompile"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 2509,
+        "methodName": "decompileArrayLiteral"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 2469,
+        "methodName": "decompile"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 441,
+        "methodName": "transformAssignment"
+      }
+    ],
+    "type": "java.lang.IllegalStateException",
+    "associatedDefects": [
+      "R3"
+    ]
+  },
+  {
+    "subject": "Rhino",
+    "trace": [
+      {
+        "declaringClass": "org.mozilla.javascript.Kit",
+        "fileName": "Kit.java",
+        "lineNumber": 366,
+        "methodName": "codeBug"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 2498,
+        "methodName": "decompile"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 2529,
+        "methodName": "decompileObjectLiteral"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 2472,
+        "methodName": "decompile"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.IRFactory",
+        "fileName": "IRFactory.java",
+        "lineNumber": 441,
+        "methodName": "transformAssignment"
+      }
+    ],
+    "type": "java.lang.IllegalStateException",
+    "associatedDefects": [
+      "R3"
+    ]
+  },
+  {
+    "subject": "Rhino",
+    "trace": [
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 161,
+        "methodName": "stringToKeywordForJS"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 87,
+        "methodName": "stringToKeyword"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 82,
+        "methodName": "isKeyword"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 3570,
+        "methodName": "objliteralProperty"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.Parser",
+        "fileName": "Parser.java",
+        "lineNumber": 3457,
+        "methodName": "objectLiteral"
+      }
+    ],
+    "type": "java.lang.NullPointerException",
+    "associatedDefects": [],
+    "note": "Not associated with a genuine defect. Requires input with non-printing characters."
+  },
+  {
+    "subject": "Rhino",
+    "trace": [
+      {
+        "declaringClass": "java.util.Arrays",
+        "fileName": "Arrays.java",
+        "lineNumber": 3745,
+        "methodName": "copyOf"
+      },
+      {
+        "declaringClass": "java.lang.AbstractStringBuilder",
+        "fileName": "AbstractStringBuilder.java",
+        "lineNumber": 172,
+        "methodName": "ensureCapacityInternal"
+      },
+      {
+        "declaringClass": "java.lang.AbstractStringBuilder",
+        "fileName": "AbstractStringBuilder.java",
+        "lineNumber": 748,
+        "methodName": "append"
+      },
+      {
+        "declaringClass": "java.lang.StringBuilder",
+        "fileName": "StringBuilder.java",
+        "lineNumber": 245,
+        "methodName": "append"
+      },
+      {
+        "declaringClass": "org.mozilla.javascript.TokenStream",
+        "fileName": "TokenStream.java",
+        "lineNumber": 1481,
+        "methodName": "getTemplateLiteralChar"
+      }
+    ],
+    "type": "java.lang.OutOfMemoryError",
+    "associatedDefects": [
+      "R4"
+    ]
+  },
+  {
+    "subject": "Rhino",
+    "trace": [],
+    "type": "java.lang.OutOfMemoryError",
+    "associatedDefects": [
+      "R4"
+    ]
+  }
+]
