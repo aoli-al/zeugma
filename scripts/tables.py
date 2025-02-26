@@ -2,8 +2,8 @@ import pandas as pd
 
 import report_util
 
-BASELINE_FUZZER = 'Zeugma-Link'
-FUZZER_ORDER = ['BeDiv-Simple', 'BeDiv-Struct', 'RLCheck', 'Zest', 'Zeugma-X', 'Zeugma-1PT', 'Zeugma-2PT',
+BASELINE_FUZZER = 'Zest'
+FUZZER_ORDER = ['BeDiv-Simple', 'BeDiv-Struct', 'EI', 'Zest',
                 'Zeugma-Link']
 
 

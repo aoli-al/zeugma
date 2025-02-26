@@ -26,12 +26,12 @@ TEMPLATE = """
             font-weight: 550;
             display: block;
         }
-        
+
         h3 {
             font-size: 12px;
             display: block;
         }
-        
+
         img {
             max-width: 100%;
             max-height: calc((100vh - 100px) * 1 / 2);
@@ -39,7 +39,7 @@ TEMPLATE = """
             height: auto;
             object-fit: contain;
         }
-        
+
         .wrapper {
             display: flex;
             overflow-x: scroll;
@@ -164,6 +164,7 @@ def create_report(input_dir, report_file):
     times = [pd.to_timedelta(5, 'm'), pd.to_timedelta(3, 'h')]
     coverage = find_dataset(input_dir, 'coverage')
     detections = find_dataset(input_dir, 'detections')
+    # detections = None
     if coverage is None or detections is None:
         coverage, detections = extract.extract_data(input_dir, input_dir)
     content = create_section('coverage', create_coverage_content, data=coverage, times=times)
