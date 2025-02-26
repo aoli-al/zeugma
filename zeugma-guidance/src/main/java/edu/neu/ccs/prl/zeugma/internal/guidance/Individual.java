@@ -5,6 +5,8 @@ import edu.neu.ccs.prl.zeugma.internal.util.ByteList;
 public class Individual {
     private final ByteList input;
     private final String generatedInput;
+    private final int inputId;
+    private static int nextId = 0;
 
     public Individual(ByteList input, String generatedInput) {
         if (input == null) {
@@ -12,9 +14,14 @@ public class Individual {
         }
         this.input = input;
         this.generatedInput = generatedInput;
+        inputId = nextId++;
     }
 
     public void initialize(FuzzTarget target) {
+    }
+
+    public int getInputId() {
+        return inputId;
     }
 
     public ByteList getInput() {

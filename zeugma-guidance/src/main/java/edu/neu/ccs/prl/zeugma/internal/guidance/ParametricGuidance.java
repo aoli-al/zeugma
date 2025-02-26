@@ -89,7 +89,12 @@ public class ParametricGuidance<T extends Individual> implements Guidance {
             boolean[][] coverageMap = observer.getCoverageMap();
 
             // Update the population
-            boolean saved = tracker.update(report, coverageMap);
+            T newInput = tracker.update(report, coverageMap);
+            boolean saved = newInput != null;
+            int newInputId = -1;
+            if (newInput != null) {
+                newInputId = newInput.getInputId();
+            }
 
             String mutationLog = "";
             if (selected != null && OBSERVE_MUTATION_DISTANCE) {
@@ -110,7 +115,8 @@ public class ParametricGuidance<T extends Individual> implements Guidance {
                 int byteDistance = Math.getLevenshteinDistFromByteList(selected.getInput(), report.getRecording());
                 mutationLog = child.length() + "," +  parent.length() + "," +
                         report.getRecording().size() + "," + selected.getInput().size() + "," +
-                        byteDistance + "," + stringDistance + "," + saved + "," + type + ",-1,-1,-1";
+                        byteDistance + "," + stringDistance + "," + saved + "," + type + "," +
+                        selected.getInputId() + "," + newInputId + ",-1";
             }
             // Notify the manager that the execution finished
             manager.finishedExecution(report, coverageMap, mutationLog);

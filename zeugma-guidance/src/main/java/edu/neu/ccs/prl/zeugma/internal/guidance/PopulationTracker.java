@@ -42,7 +42,7 @@ public class PopulationTracker<T extends Individual> {
         return population;
     }
 
-    public boolean update(TestReport report, boolean[][] coverageMap) {
+    public T update(TestReport report, boolean[][] coverageMap) {
         boolean saved = false;
         // Avoid saving inputs that trigger expensive failures to the population
         if (!(report.getFailure() instanceof StackOverflowError || report.getFailure() instanceof OutOfMemoryError)) {
@@ -50,9 +50,10 @@ public class PopulationTracker<T extends Individual> {
             saved = update(individual, coverageMap);
             if (saved) {
                 individual.initialize(report.getTarget());
+                return individual;
             }
         }
-        return saved;
+        return null;
     }
 
     private boolean update(T participant, boolean[][] runCoverageMap) {
