@@ -81,9 +81,9 @@ final class ParametricFuzzTarget implements FuzzTarget {
                 }
             }
         } catch (InputSizeException | AssumptionViolatedException ignored) {
-            return new TestReport(ignored, provider.getRecording(), this, "");
+            return new TestReport(null, provider.getRecording(), this, "", ignored);
         } catch (Throwable t) {
-            return new TestReport(t, provider.getRecording(), this, "");
+            return new TestReport(t, provider.getRecording(), this, "", null);
         } finally {
             terminateEarly = provider.close();
         }
@@ -92,7 +92,8 @@ final class ParametricFuzzTarget implements FuzzTarget {
         }
         try {
             runner.execute(notifier, arguments);
-            return new TestReport(listener.getAndReset(), provider.getRecording(), this, arguments[0].toString());
+            return new TestReport(listener.getAndReset(), provider.getRecording(), this, arguments[0].toString(),
+                    listener.getAndResetAssumptionViolation());
         } catch (Throwable t) {
             propagateOutOfMemoryError(t);
             throw new IllegalStateException("Failed to execute test", t);
@@ -110,10 +111,16 @@ final class ParametricFuzzTarget implements FuzzTarget {
 
     private static final class FailureListener extends RunListener {
         private Throwable failure = null;
+        private Throwable assumptionViolationException = null;
 
         @Override
         public void testStarted(Description description) {
             failure = null;
+        }
+
+        @Override
+        public void testAssumptionFailure(Failure failure) {
+            assumptionViolationException = failure.getException();
         }
 
         @Override
@@ -124,6 +131,12 @@ final class ParametricFuzzTarget implements FuzzTarget {
         public Throwable getAndReset() {
             Throwable result = failure;
             failure = null;
+            return result;
+        }
+
+        public Throwable getAndResetAssumptionViolation() {
+            Throwable result = assumptionViolationException;
+            assumptionViolationException = null;
             return result;
         }
     }

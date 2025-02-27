@@ -124,7 +124,7 @@ public final class CallTreeUtil {
         @Override
         public TestReport run(RecordingDataProvider provider) {
             structure = generator.apply(provider);
-            return new TestReport(null, provider.getRecording(), this, "");
+            return new TestReport(null, provider.getRecording(), this, "", null);
         }
 
         public T getStructure() {

@@ -100,10 +100,15 @@ public class ParametricGuidance<T extends Individual> implements Guidance {
             if (selected != null && OBSERVE_MUTATION_DISTANCE) {
                 String type;
                 Throwable failure = report.getFailure();
-                if (failure == null) {
+                Throwable assumptionFailure = report.getAssumptionViolated();
+                if (failure == null && assumptionFailure == null) {
                     type = "SUCCESS";
                 } else {
-                    if (failure.getClass().getName().contains("AssumptionViolatedException")) {
+                    if (assumptionFailure != null && assumptionFailure.getClass().getName().contains(
+                            "AssumptionViolatedException")) {
+                        type = "INVALID";
+                    }
+                    else if (failure != null && failure.getClass().getName().contains("AssumptionViolatedException")) {
                         type = "INVALID";
                     } else {
                         type = "FAILURE";
