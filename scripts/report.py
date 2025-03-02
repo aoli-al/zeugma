@@ -161,7 +161,7 @@ def write_report(report_file, content):
 
 
 def create_report(input_dir, report_file):
-    times = [pd.to_timedelta(5, 'm'), pd.to_timedelta(3, 'h')]
+    times = [pd.to_timedelta(5, 'm'), pd.to_timedelta(24, 'h')]
     coverage = find_dataset(input_dir, 'coverage')
     detections = find_dataset(input_dir, 'detections')
     # detections = None

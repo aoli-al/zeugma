@@ -2,10 +2,10 @@ from multiprocessing import Pool
 import os
 
 CONFIGURATIONS = [
-    "ant",
-    "closure",
-    "maven",
-    "rhino",
+    #  "ant",
+    #  "closure",
+    #  "maven",
+    #  "rhino",
     "chocopy",
     "gson",
     "jackson"
@@ -28,5 +28,5 @@ def get_commands():
                 command = f"mvn -pl :zeugma-evaluation-tools meringue:analyze -P{config},{algo} -Dmeringue.outputDirectory=/data/aoli/havoc_eval/cov-test/{config}-{algo}-results-{iter}"
                 yield command
 
-with Pool(10) as p:
+with Pool(1) as p:
     p.map(os.system, get_commands())

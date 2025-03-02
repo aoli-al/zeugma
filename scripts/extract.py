@@ -127,7 +127,7 @@ def resample(data, time_index):
         .set_index('time') \
         .sort_index()
     # Create a placeholder data frame indexed at the sample times filled with NaNs
-    placeholder = pd.DataFrame(np., index=time_index, columns=data.columns)
+    placeholder = pd.DataFrame(np.nan, index=time_index, columns=data.columns)
     # Combine the placeholder data frame with the original
     # Replace the NaN's in placeholder with the last value at or before the sample time in the original
     data = data.combine_first(placeholder).ffill().fillna(0)
@@ -214,7 +214,7 @@ def extract_detections_data(campaigns, output_dir):
 
 
 def extract_data(input_dir, output_dir):
-    times = [pd.to_timedelta(5, 'm'), pd.to_timedelta(3, 'h')]
+    times = [pd.to_timedelta(5, 'm'), pd.to_timedelta(24, 'h')]
     campaigns = read_campaigns(input_dir)
     os.makedirs(output_dir, exist_ok=True)
     return extract_coverage_data(campaigns, times, output_dir), extract_detections_data(campaigns, output_dir)
