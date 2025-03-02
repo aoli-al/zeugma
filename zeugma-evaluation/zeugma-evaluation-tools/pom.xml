@@ -355,7 +355,7 @@
             <id>random</id>
             <properties>
                 <meringue.otherArgs>
-                    -Dblind=true
+                    -Djqf.ei.TOTALLY_RANDOM=true
                 </meringue.otherArgs>
                 <meringue.framework>edu.neu.ccs.prl.zeugma.ZestFramework</meringue.framework>
                 <meringue.testMethod>testWithGenerator</meringue.testMethod>
