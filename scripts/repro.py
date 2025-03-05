@@ -2,12 +2,12 @@ from multiprocessing import Pool
 import os
 
 CONFIGURATIONS = [
-    #  "ant",
-    #  "closure",
-    #  "maven",
-    #  "rhino",
-    #  "chocopy",
-    #  "gson",
+    "ant",
+    "closure",
+    "maven",
+    "rhino",
+    "chocopy",
+    "gson",
     "jackson"
 
 ]
