@@ -6,8 +6,8 @@ CONFIGURATIONS = [
     #  "closure",
     #  "maven",
     #  "rhino",
-    "chocopy",
-    "gson",
+    #  "chocopy",
+    #  "gson",
     "jackson"
 
 ]
